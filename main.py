@@ -28,3 +28,11 @@ plt.imshow(rhof[20,:,:],origin='lower')
 plt.colorbar()
 plt.savefig('canopy.png')
 print('Canopy')
+
+ign = import_fortran_dat_file('ignite_selected.dat',[10,300,1])
+
+plt.figure(4)
+plt.imshow(rhof[0,:,:],origin='lower')
+plt.colorbar()
+plt.savefig('ign.png')
+print('Ign')
